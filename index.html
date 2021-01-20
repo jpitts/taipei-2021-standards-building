@@ -1,0 +1,427 @@
+	<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Standards-building In Ethereum-land</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/semeth.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+
+				<section>
+
+					<h2>Standards-building In Ethereum-land</h2>
+
+					<h3>How to build the foundations of ecosystems</h3>
+				</section>
+
+
+				<section>
+						<img src="./images/all-the-things-150x150.jpg" style="width:100px;height:100px; border:0px;" />
+					<br/>
+					Jamie Pitts
+					<br/>
+					<a href="http://twitter.com/jamiepitts">http://twitter.com/jamiepitts</a>
+				</section>
+
+
+				<section>
+
+					<p>Before this gets started...</p>
+					<h2>Some Resources to open up</h2>
+
+					<blockquote>
+
+					<p>
+						Ethereum Improvement Proposals (EIPs)
+						<br/>
+						👉 <a href="https://eips.ethereum.org/" >https://eips.ethereum.org/</a>
+					</p>
+					
+
+					<p>
+						Magicians' Forum
+						<br/>
+						👉 <a href="https://ethereum-magicians.org">https://ethereum-magicians.org</a>
+					</p>
+
+
+					<p>
+						Cat Herders
+						<br/>
+						👉 <a href="https://www.ethereumcatherders.com">https://www.ethereumcatherders.com</a>
+					</p>
+					</blockquote>
+
+				</section>
+
+
+				<section>
+
+					<h2>Technical Standard</h2>
+
+					<blockquote>
+						A formal document which establishes uniform engineering or technical criteria, methods, processes, and practices. 
+					</blockquote>
+
+					<p class="fragment">
+						<em>It takes a lot of coordination for a standard to be adopted!</em>
+					</p>
+
+				</section>
+
+
+				<section>
+
+					<h2>Are standards different in Ethereum-land?</h2>
+
+				</section>
+
+
+				<section style="height:75%">
+					<h2>Challenges</h2>
+
+					<hr/>
+
+					<ul>
+						<li>Uncensorable, open network: no one is really in charge</li>
+						<br/>
+						<li class="fragment">Thousands of users, billions of dollars depend on it working</li>
+						<br/>
+						<li class="fxragment">Sometimes there is controversy and drama</li>
+						<br/>
+						<li class="fragment">Long road from proposal, to prototype, to testing, to deployment</li>
+					</ul>
+
+				</section>
+
+
+				<section style="height:75%">
+					<h2>Opportunities</h2>
+
+					<hr/>
+
+					<ul>
+						<li>Open institutions "manage the commons"
+							<br/>
+							developers, proposal editors, coordinators, client teams</li>
+						<br/>
+						<li class="fragment">Anyone can propose! It all happens online!</li>
+						<br/>
+						<li class="fragment">Proposals get expert input</li>
+						<br/>
+						<li class="fragment">Bring value to the network and to smart contract systems</li>
+					</ul>
+
+				</section>
+
+
+				<section>
+
+					<h2>The Proposal</h2>
+
+					<p>
+						<img src="images/erc-20.png" style="border:0px;"/>
+					</p>
+				</section>
+
+
+				<section>
+
+					<h2>EIP: Ethereum Improvement Proposal</h2>
+
+					<blockquote>
+						EIPs describe standards for the Ethereum platform, including core protocol specs, client APIs, and contract standards.
+					</blockquote>
+
+				</section>
+
+
+				<section>
+
+					<h2>ERCs</h2>
+
+					<blockquote>
+						A type of EIP which describes application-level standards and conventions, including contract standards.
+					</blockquote>
+
+				</section>
+
+
+				<section>
+
+					<h2>Core EIPs</h2>
+
+					<blockquote>
+						A type of EIP which requires a consensus fork!
+					</blockquote>
+
+				</section>
+
+
+				<section>
+
+					<h2>Getting an EIP to Ethereum mainnet</h2>
+
+					<ol>
+						<li class="fragment">The EIP process</li>
+						<br/>
+						<li class="fragment">The network upgrade process</li>
+					</ol>
+
+
+				</section>
+
+
+				<section style="height:75%;">
+
+					<h2>The EIP process</h2>
+
+					<ul>
+						<li>Goal: create high quality proposals, evaluated by the community</li>
+						<br/>
+						<li class="fragment">The proposer seeks competent input (Magicians' Forum)</li>
+						<br/>
+						<li class="fragment">The proposer seeks buy-in from stakeholders</li>
+					</ul>
+
+				</section>
+
+
+				<section style="height:75%">
+
+					<h2>The network upgrade process</h2>
+
+					<ul>
+						<li>Goal: maintain a healthy, evolving network</li>
+						<br/>
+						<li class="fragment">Cat Herders organize the process</li>
+						<br/>
+						<li class="fragment">Hard Fork Coordinators manage the evaluation and scheduling for inclusion in an upgrade</li>
+						<br/>
+						<li class="fragment">"core devs" implement the proposals and decide if they should be included in a HF</li>
+					</ul>
+
+				</section>
+
+
+				<section style="height:75%">
+
+					<h2>The "core devs" calls</h2>
+
+					<ul>
+						<li>Protocol client developers and HF coordinators</li>
+						<br/>
+						<li class="fragment">Finding <strong>consensus</strong> about each proposal</li>
+						<br/>
+						<li class="fragment">Open process</li>
+						<br/>
+						<li class="fragment">Calls are posted to Youtube </li>
+					</ul>
+
+				</section>
+
+				<section>
+
+					<h2>How do I work on an EIP?</h2>
+
+				</section>
+
+
+				<section>
+
+					<h2>The EIPs are in a git repo!</h2>
+
+					<blockquote>
+						"Because the EIPs are maintained as text files in a versioned repository, their revision history is the historical record of the feature proposal."
+					</blockquote>
+
+					<p>
+						<a href="https://github.com/ethereum/EIPs">https://github.com/ethereum/EIPs</a>
+					</p>
+
+				</section>
+
+
+				<section>
+
+					<h2>Format of EIPs</h2>
+
+						<p>
+						Each EIP should have the following parts:
+						</p>
+
+					<table border="0">
+						<tr>
+							<td valign="top" align="left">
+								Preamble<br/>
+								Simple Summary <br/>
+								Abstract<br/>
+								Motivation<br/>
+								Specification
+
+							</td>
+ 
+							<td valign="top" align="left">
+								Rationale<br/>
+								Backwards Compatibility<br/>
+								Test Cases<br/>
+								Implementations<br/>
+								Copyright Waiver
+					
+							</td>
+						</tr>
+					</table>
+
+						<p>
+						EIPs are written in markdown format.
+						</p>
+
+				</section>
+
+
+				<section>
+
+					<h2>Ready to propose? Or want to help out?</h2>
+
+					<blockquote>
+					<p>
+					Join a discussion on
+					<br/>
+					<a href="https://ethereum-magicians.org">https://ethereum-magicians.org</a>
+					</p>
+					</blockquote>
+
+				</section>
+
+
+				<section style="height:75%;">
+
+					<h2>Don't be shy! We're friendly.</h2> 
+					<h3>Join in the discussion to learn or to help others</h3>
+
+					<img src="./images/erc-1066-discussion.png" style="border:0px;" />
+
+				</section>
+
+
+				<section>
+
+					<h2>Resources</h2>
+
+					<blockquote>
+
+					<p>
+						Ethereum Improvement Proposals (EIPs)
+						<br/>
+						👉 <a href="https://eips.ethereum.org/" >https://eips.ethereum.org/</a>
+					</p>
+					
+
+					<p>
+						Magicians' Forum
+						<br/>
+						👉 <a href="https://ethereum-magicians.org">https://ethereum-magicians.org</a>
+					</p>
+
+
+					<p>
+						Cat Herders
+						<br/>
+						👉 <a href="https://www.ethereumcatherders.com">https://www.ethereumcatherders.com</a>
+					</p>
+					</blockquote>
+
+				</section>
+
+
+				<section>
+						<img src="./images/all-the-things-150x150.jpg" style="width:100px;height:100px; border:0px;" />
+					<br/>
+					Jamie
+					<br/>
+					<a href="http://twitter.com/jamiepitts">http://twitter.com/jamiepitts</a>
+
+					<hr/>
+
+					This presentation was built with reveal.js
+					<a href="https://github.com/hakimel/reveal.js" target="_new">https://github.com/hakimel/reveal.js</a>
+				</section>
+
+				<section>
+					&nbsp;
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+					## That's it.
+
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+					## Done.
+
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+					## Fin.
+
+					</textarea>
+				</section>
+
+				
+				<section data-markdown>
+					<textarea data-template>
+
+					&nbsp;
+
+					</textarea>
+				</section>
+
+			
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
